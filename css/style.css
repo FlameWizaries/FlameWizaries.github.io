@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+.container {
+    width: 1180px;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.header {
+    height: 40px;
+    padding-top: 32px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo_name {
+    margin-left: 11.88px;
+    font-family: Rubik-Medium;
+    font-size: 20px;
+    color: #333333;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search_input {
+    width: 320px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-family: Rubik-Regular;
+    font-weight: 400px;
+    font-size: 16px;
+    font-family: Rubik-Medium;
+}
+
+.header__search_input:focus {
+    outline: none;
+}
+
+.header__search_input::placeholder {
+    font-family: Rubik-Regular;
+    color: #828282;
+}
+
+.header__search_btn {
+    font-weight: 500;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    color: #E5261E;
+    border: none;
+    background: none;
+    margin-left: 32px;
+}
+
+.header__auth_btn {
+    width: 113px;
+    height: 38px;
+    background: #E5261E;
+    border-radius: 4px;
+    border: none;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.nav__ul {
+    width: 311px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__ul_a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 28px;
+    font-family: Rubik-Medium;
+}
+
+.nav__ul_li {
+    list-style-type: none;
+    padding-top: 44px;
+}
+
+.nav__ul_a:hover {
+    border-bottom: #E5261E 2px solid;
+    padding-bottom: 9px;
+    color: #E5261E;
+}
+
+/* Блок с фильмами */
+.movies__header {
+    font-family: Rubik-Medium;
+    font-size: 24px;
+    color: #333333;
+}
+.movies__gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.movies__gallery_item {
+    width: 280px;
+    position: relative;
+}
+.movies__gallery_img {
+    margin: 16px 0;
+    border-radius: 8px;
+}
+.movies__gallery_txt {
+    font-family: Rubik-Regular;
+    font-size: 20px;
+    color: #333333;
+}
+.movies__gallery_description {
+    width: 280px;
+    height: 370px;
+    background-color: rgba(51,51,51, 0.8);
+    border-radius: 8px;
+    color: #f2f2f2;
+    line-height: 140%;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    opacity: 0;
+}
+
+.movies__gallery_item:hover .movies__gallery_description{
+    opacity: 1;
+}
+
+.ganres__gallery_item {
+    width: 280px;
+    height: 208px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.ganres__gallery_item:hover{
+    opacity: 1;
+}
+
+.ganres__gallery_bkg-c {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.ganres__gallery_bkg-f {
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.ganres__gallery_bkg-d {
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.ganres__gallery_bkg-h {
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+
+.ganres__gallery_emj {
+    font-size: 48px;
+}
+
+.ganres__gallery_txt {
+    position: absolute;
+    top: 160px;
+    left: 97px;
+    font-family: Rubik-Regular;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.ganres__gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.ganres {
+    margin-top: 32px;
+}
+
+.footer{
+    width: 1440px;
+    height: 120px;
+    background-color: #f2f2f2;
+    position: absolute;
+    margin-top: 72px;
+}
+
+.footer__text{
+    width: 940px;
+    height: 19px;
+    padding-left: 202px;
+    position: absolute;
+    font-size: 16px;
+}
+
+.footer__text_address {
+    font-family: Rubik-Regular;
+    margin-top: 22px;
+}
+
+
+.footer__text_phone{
+    font-family: Rubik-Regular;
+    margin-top: 6px;
+}
+
+.footer__text_site{
+    text-decoration: none;
+    margin-top: 10px;
+    position: absolute;
+    color: #1F4766;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+}
+
+.footer__logo{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 130.03px; 
+}
+
+
+/* Адаптив под мобильный телефон 450px */
+@media screen and (max-width: 450px){
+    .header{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header__logo{
+        margin: 0 auto;
+    }
+
+    .header__search{
+        display: flex;
+        flex-direction: column;
+        margin: 32px 0;
+    }
+    
+    .header__search_btn{
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+
+
+/* ТЕЛЕКАНАЛЫ */
+.chanells {
+    margin-top: 27px;
+    width: 1180px;
+    height: 696px;
+    background-color: #fff
+}
+.channels__first {
+    background-color: #f2f2f2;
+    width: 1180px;
+    height: 162px;
+}
+.channels__2x2 {
+    margin-top: 16px;
+    background-color: #f2f2f2;
+    width: 1180px;
+    height: 162px;
+}
+.channels__rbk {
+    margin-top: 16px;
+    background-color: #f2f2f2;
+    width: 1180px;
+    height: 162px;
+}
+.channels__amedia {
+    margin-top: 16px;
+    background-color: #f2f2f2;
+    width: 1180px;
+    height: 162px;
+}
+
+.channels__logo {
+    position: absolute;
+    width: 114px;
+    height: 65px;
+    background-color: #f2f2f2;
+    margin-left: 143px;
+    margin-top: 48px;
+}
+
+.chanells__logo_first {
+    position: absolute;
+    padding-left: 32.44px;
+}
+
+.chanells__logo_2x2 {
+    position: absolute;
+    margin-top: 8px;
+}
+
+.chanells__logo_rbk {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 29.11px;
+}
+
+.chanells__logo_amedia {
+    position: absolute;
+    margin-left: 25px;
+}
+
+
+.channels__str {
+    width: 280px;
+    height: 24px;
+    margin-left: 400px;
+    margin-top: 21px;
+    position: absolute;
+    font-family: Rubik-Medium;
+    font-size: 20px;
+    color: #333333;
+}
+
+.channels__str_time {
+    width: 46px;
+    height: 19px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 62px;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.channels__str_time2 {
+    width: 46px;
+    height: 19px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 93px;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+.channels__str_time3 {
+    width: 46px;
+    height: 19px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 124px;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.channels__str_title{
+    width: 694px;
+    height: 19px;
+    margin-left: 462px;
+    margin-top: 62px;
+    position: absolute;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.channels__str_title2{
+    width: 694px;
+    height: 19px;
+    margin-left: 462px;
+    margin-top: 93px;
+    position: absolute;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.channels__str_title3{
+    width: 694px;
+    height: 19px;
+    margin-left: 462px;
+    margin-top: 124px;
+    position: absolute;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    color: #333333;
+}
