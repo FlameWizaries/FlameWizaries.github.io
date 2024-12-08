@@ -256,8 +256,14 @@
 }
 
 
-/* Адаптив под мобильный телефон 450px */
-@media screen and (max-width: 450px){
+/* Адаптив под мобильный телефон 370px */
+@media screen and (max-width: 300px){
+
+    .container{
+        width: 300px;
+        height: 800px;
+    }
+
     .header{
         flex-direction: column;
         height: auto;
