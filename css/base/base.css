@@ -1,0 +1,28 @@
+:root {
+    --accent: #1F59FF;
+    --description: #505050;
+
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Manrope-Bold';
+    /* font-size: 28px; */
+    font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+    color: #000;
+}
+
+h3 {
+    font-family: 'Manrope-Semibold';
+    font-size: 20px;
+}
+
+
+
+

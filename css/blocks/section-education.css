@@ -1,0 +1,138 @@
+.section-education {
+    background-color: #fbfbfb;
+}
+
+/* Education HEADER */
+.education-header {
+    margin: 0 auto;
+    padding: 70px 0 112px 0;
+
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.education-header p {
+    margin-top: 15px;
+
+    font-family: 'Manrope-Medium';
+    /* font-size: 16px; */
+    font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem);
+    
+    color: var(--description);
+}
+
+
+/* Education BLOCKS CONTENT */
+.education-advantages {
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.eductaion-advantages-img {
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    border-radius: 20px;
+}
+
+.education-advantages-content {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 582px;
+    width: 100%;
+    margin-left: 68px;
+    color: #7d7d7d;
+}
+
+.education-advantages-content div:nth-child(2){
+    margin-top: 55px;
+}
+
+.education-advantages-content div:nth-child(3){
+    margin-top: 55px;
+}
+
+.education-advantages-content-block {
+    border-bottom: 2px solid;
+    border-color: #7d7d7d;
+    padding-bottom: 30px;
+
+    transition: all 0.2s ease-in, color 0.2s ease-in;
+}
+
+.education-advantages-content-block h3 {
+    font-family: 'Manrope-SemiBold';
+    /* font-size: 24px; */
+    font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+    border-color: #7d7d7d;
+
+    margin-bottom: 15px;
+
+    transition: all 0.2s ease-in
+}
+
+.education-advantages-content-block p {
+    font-family: 'Manrope-Regular';
+    /* font-size: 18px; */
+    font-size: clamp(0.938rem, 0.869rem + 0.34vw, );
+
+    transition: all 0.2s ease-in
+}
+
+.education-advantages-content-block:hover{
+    border-color: #000;
+    transform: translateY(-5px);
+}
+
+.education-advantages-content-block:hover p{
+    color: var(--description);
+}
+
+.education-advantages-content-block:hover h3{
+    color: #000;
+}
+
+
+
+@media (max-width:1050px){
+    .education-advantages{
+        flex-direction: column;
+    }
+
+    .eductaion-advantages-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .education-header{
+        padding: 80px 0 60px 0;
+    }
+
+    .education-advantages-content {
+        margin: 0 auto; 
+        max-width: 80%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:768px){
+    .eductaion-advantages-img {
+        width: 90%;
+    }
+
+    .education-advantages-content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:425px){
+    .eductaion-advantages-img {
+        width: 100%;    
+    }
+
+    .education-advantages-content {
+        max-width: 100%;
+    }
+}

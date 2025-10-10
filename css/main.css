@@ -1,0 +1,13 @@
+/* FONTS */
+@import "./../fonts/Manrope.css";
+
+/* BASE */
+@import "./base/reset.css";
+@import "./base/base.css";
+
+/* BLOCKS */
+@import "./blocks/header.css";
+@import "./blocks/section-education.css";
+@import "./blocks/specalties.css";
+@import "./blocks/footer.css";
+@import "./blocks/section-contacts.css";

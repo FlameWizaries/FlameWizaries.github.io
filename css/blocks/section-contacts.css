@@ -1,0 +1,134 @@
+.contacts-header{
+    max-width: 376px;
+    margin: 0 auto;
+    padding-top: 95px;
+    margin-bottom: 75px;
+}
+
+.contacts-header h1, .yandexmap-header h1{
+    font-family: 'Manrope-Bold';
+    /* font-size: 21px; */
+    font-size: clamp(1.313rem, 1.153rem + 0.8vw, 1.75rem);
+    letter-spacing: 0.04em;
+    color: #000;
+    text-align: center;
+}
+
+.contacts-header p, .yandexmap-header p{
+    font-family: 'Manrope-Regular';
+    /* font-size: 16px; */
+    font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+    letter-spacing: 0.04em;
+    color: var(--description);
+    text-align: center;
+
+    padding-top: 15px;
+}
+
+
+.contacts-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.contacts-block {
+    max-width: 212px;
+}
+
+.contacts-block h4 {
+    font-family: 'Manrope-Medium';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #000;
+
+    margin-bottom: 25px;
+    
+    margin-top: 15px;
+}
+
+.contacts-block p {
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--description);
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.contacts-block a {
+    display: inline-block;
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--description);
+
+    border-bottom: 1px solid var(--description);
+    padding-bottom: 5px;
+
+    transition: all 0.2s ease-in;
+}
+
+.contacts-block a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.contacts-block a:active{
+    color: blue;
+    border-color: blue;
+    transform: translateY(-1px);
+    transition: color 0s;
+    transition: border-color 0s;
+}
+
+/* MAP */
+.yandexmap-header {
+    max-width: 271px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.yandexmap-map {
+	display: block;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 132px;
+}
+
+
+@media (max-width: 900px) {
+    .contacts-blocks {
+        max-width: 440px;
+        margin: 0 auto;
+        margin-bottom: 130px;
+        gap: 50px;
+    }
+
+    .contacts-block {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 470px){
+    .contacts-blocks {
+        max-width: 265px;
+        gap: 70px;
+    }
+}
+
+@media (max-width: 600px){
+    .contacts-block-img{
+        width: 85px;
+    }
+}
+
