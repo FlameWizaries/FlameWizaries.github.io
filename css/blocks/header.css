@@ -181,7 +181,7 @@
     }
 
     .nav.active{
-        height: auto;
+        height: 368px;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
@@ -192,7 +192,7 @@
         opacity: 0;
         pointer-events: none;
         transform: translateY(-10px);
-        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in, height 0.3s ease-in;
     }
 
     .nav-list {
