@@ -69,6 +69,11 @@
     transition: color 0s, bottom-color 0s, transform 0s;
 }
 
+.nav-item a.active {
+    color: #002ead;
+    border-bottom-color: #002ead;
+}
+
 .burger {
     display: none;
     position: absolute;
@@ -185,7 +190,7 @@
     .nav {
         height: 0;
         opacity: 0;
-        pointer-events: 0;
+        pointer-events: none;
         transform: translateY(-10px);
         transition: opacity 0.2s ease-in, transform 0.2s ease-in;
     }
