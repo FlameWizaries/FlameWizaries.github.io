@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE WOCKHARDT MANDEM</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Russo+One&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="header-nameacc">
+                    <p class="name-acc">Bartholomew_Karatel</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section-report">
+            <div class="container">
+                <p class="report-date">15 JULY 2026</p>
+                <div class="block-report">
+                    <div class="report-text">
+                        <div class="event">
+                            <p class="title-mptime">EVENT</p>
+                            <p class="text-mptime">FAMILY CAPT</p>  
+                        </div>
+
+                        <div class="time">
+                            <p class="title-mptime">TIME</p>
+                            <p class="text-mptime">10:00</p>
+                        </div>
+                    </div>
+                    <div class="report-gallery">
+                        <img src="./img/report/15.07/11.22.40.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <img class="fullImage" src="" alt="">
+                    </div>
+                </div>
+
+                <div class="block-report">
+                    <div class="report-text">
+                        <div class="event">
+                            <p class="title-mptime">EVENT</p>
+                            <p class="text-mptime">RAID</p>  
+                        </div>
+
+                        <div class="time">
+                            <p class="title-mptime">TIME</p>
+                            <p class="text-mptime">12:00</p>
+                        </div>
+                    </div>
+                    <div class="report-gallery">
+                        <img src="img/report/15.07/13.46.24.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <img class="fullImage" src="" alt="">
+                    </div>
+                </div>
+
+                <div class="block-report">
+                    <div class="report-text">
+                        <div class="event">
+                            <p class="title-mptime">EVENT</p>
+                            <p class="text-mptime">RAID</p>  
+                        </div>
+
+                        <div class="time">
+                            <p class="title-mptime">TIME</p>
+                            <p class="text-mptime">18:00</p>
+                        </div>
+                    </div>
+                    <div class="report-gallery">
+                        <img src="img/report/15.07/19.34.17.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <img class="fullImage" src="" alt="">
+                    </div>
+                </div>
+
+                <div class="block-report">
+                    <div class="report-text">
+                        <div class="event">
+                            <p class="title-mptime">EVENT</p>
+                            <p class="text-mptime">FAMILY CAPT</p>  
+                        </div>
+
+                        <div class="time">
+                            <p class="title-mptime">TIME</p>
+                            <p class="text-mptime">19:00</p>
+                        </div>
+                    </div>
+                    <div class="report-gallery">
+                        <img src="img/report/15.07/20.10.55.jpg" alt="">
+                        <img src="img/report/15.07/20.19.45.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <img class="fullImage" src="" alt="">
+                    </div>
+                </div>
+
+    
+            </div>
+        </section>
+
+        
+    </main>
+</body>
+
+<script>
+    document.querySelectorAll(".block-report").forEach(block => {
+        const overlay = block.querySelector(".overlay");
+        const fullImage = block.querySelector(".fullImage");
+        const images = block.querySelectorAll(".report-gallery img");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                fullImage.src = img.src;
+                overlay.classList.add("active");
+            });
+        });
+
+        overlay.addEventListener("click", () => {
+            overlay.classList.remove("active");
+        });
+    });
+</script>
+</html>
